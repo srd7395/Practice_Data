@@ -1,0 +1,19 @@
+organization = "TS"
+environment = "Dev"
+app = "ADO"
+tier = "Web"
+rgname = "RGP"
+loc ="Canada Central"
+vnet_name = "VnetP"
+vnet_address = ["14.0.0.0/16"]
+subnet_name = "subnet01P"
+subnet_address = ["14.0.0.0/24"]
+nic = "NICP"
+pip = "pip1P"
+NSG = "NSG1P"
+vmname = "VMP"
+tagging = {
+    CreatedBy = "TrustedSavvy Team"
+    CostCenter = 123
+    Org = "TS"
+}
