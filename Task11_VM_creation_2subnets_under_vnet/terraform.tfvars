@@ -1,0 +1,19 @@
+organization = "TS"
+environment = "Dev"
+app = "ADO"
+tier = "Web"
+rgname = "RG11"
+loc ="East US"
+vnet_name = "Vnet11"
+vnet_address = ["19.0.0.0/16"]
+subnet_name = ["subnet1", "subnet2"]
+subnet_address = ["19.0.0.0/24", "19.0.1.0/24"]
+nic = "NIC11"
+pip = "pip11"
+NSG = "NSG11"
+vmname = "VM11"
+tagging = {
+    CreatedBy = "TrustedSavvy Team"
+    CostCenter = 123
+    Org = "TS"
+}
