@@ -1,31 +1,31 @@
 variable "env" {
-  default = "dev"
+  default = "deev"
 }
 variable "app" {
-  default = "java"
+  default = "jaava"
 }
 variable "tier" {
-  default = "web"
+  default = "weeb"
 }
 variable "rgname" {
   type = string
-  default = "Interpolation"
+  default = "Innterpolation"
 }
 variable "location" {
     type = string
-    default = "East US"
+    default = "Canada Central"
 }
 variable "vnetname" {
     type = string
-    default = "vnet"   
+    default = "vneet"   
 }
 variable "subnet1" {
-	default = "subnet1"
+	default = "suubnet1"
 }
 variable "subnet2" {
-	default = "subnet2"
+	default = "suubnet2"
 }
 variable "subnet3" {
-	default = "subnet3"
+	default = "suubnet3"
 }
   
