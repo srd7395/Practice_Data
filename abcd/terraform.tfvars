@@ -1,0 +1,19 @@
+organization = "sd"
+environment = "pro"
+app = "ADO"
+tier = "ab"
+rgname = "abcd"
+loc ="East US"
+vnet_name = "Anet1"
+vnet_address = ["16.0.0.0/16"]
+subnet_name = "Asubnet01"
+subnet_address = ["16.0.0.0/24"]
+nic = "ANIC"
+pip = "Apip1"
+NSG = "ANSG1"
+vmname = "AVM1"
+tagging = {
+    CreatedBy = "shruti dixit"
+    CostCenter = 68
+    Org = "sd"
+}
