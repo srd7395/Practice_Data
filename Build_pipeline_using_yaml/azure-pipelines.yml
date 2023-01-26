@@ -1,0 +1,38 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  name: Default
+
+steps:
+- task: TerraformInstaller@0
+  displayName: terraform installer
+  inputs:
+    terraformVersion: 'latest'
+- task: TerraformTaskV3@3
+  displayName: terraform init
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    backendServiceArm: 'azureconnection'
+    backendAzureRmResourceGroupName: 'Pipelinerg'
+    backendAzureRmStorageAccountName: 'pipelinstorage2246'
+    backendAzureRmContainerName: 'pipelinecontainer2'
+    backendAzureRmKey: 'yaml.tfstate'
+- task: TerraformTaskV3@3
+  displayName: terraform plan
+  inputs:
+    provider: 'azurerm'
+    command: 'plan'
+    environmentServiceNameAzureRM: 'azureconnection'
+- task: TerraformTaskV3@3
+  displayName: terraform apply
+  inputs:
+    provider: 'azurerm'
+    command: 'apply'
+    environmentServiceNameAzureRM: 'azureconnection'
