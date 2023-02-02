@@ -1,4 +1,3 @@
-
 locals {
   name_prefix = "${var.organization}-${var.environment}-${var.app}-${var.tier}"
 }
