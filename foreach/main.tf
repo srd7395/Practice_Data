@@ -3,6 +3,7 @@ resource "azurerm_resource_group" "example" {
   location = var.location
 }
 
+
 resource "azurerm_managed_disk" "example" {
     for_each = toset(var.diskname)
   name                 = each.value # we can also use each.key
