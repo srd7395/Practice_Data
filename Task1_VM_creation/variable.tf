@@ -1,6 +1,5 @@
 variable "organization" {
-
-    type = string
+  type = string
 }
 variable "environment" {
    type = string
