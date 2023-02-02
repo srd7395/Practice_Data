@@ -8,5 +8,5 @@ default= "West Europe"
   
 variable "diskname" {
     type = list
-  default = ["osdisk", "newdisk", "ddrive", "logsdisk", "backupdrive"]
+  default = ["osdisk", "newdisk", "drive", "logsdisk", "backupdrive"]
 }
