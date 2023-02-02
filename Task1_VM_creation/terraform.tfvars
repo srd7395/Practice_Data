@@ -15,5 +15,4 @@ vmname = "VMm1"
 tagging = {
     CreatedBy = "TrustedSavvy Teamm"
     CostCenter = 123
-    Org = "TSs"
-}
+    Org = "TSs"}
