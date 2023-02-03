@@ -1,5 +1,5 @@
 data "azurerm_resource_group" "example" { # data block for creating resources in the existing rg
-name = data.terraform_remote_state.tf.outputs.rg # remote block to avoid data block variable hard coding in data.tf / give outputs.rg the output of resoucegroup should be in output form.
+name = data.terraform_remote_state.tf.outputs.rg  # remote block to avoid data block variable hard coding in data.tf / give outputs.rg the output of resoucegroup should be in output form.
 }
 
 resource "azurerm_virtual_network" "example" {
