@@ -1,7 +1,7 @@
 data "terraform_remote_state" "tf" {
   backend = "local"
 
-  config = {
+ config = {
     path = var.path #the path which resource group we want to use, give the path of terraform.tfstate
   }
 }
