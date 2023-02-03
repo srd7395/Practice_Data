@@ -19,8 +19,8 @@ variable "vnetaddress" {
  variable "subnetnames" {
  type = map
  default = {
-  websubnet = ["18.0.0.0/24"]
-  appsubnet = ["18.0.1.0/24"]
-  dbsubnet = ["18.0.2.0/24"]
+   websubnet = ["18.0.0.0/24"]
+   appsubnet = ["18.0.1.0/24"]
+   dbsubnet = ["18.0.2.0/24"]
  }
  }
